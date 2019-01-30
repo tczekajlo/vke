@@ -56,3 +56,9 @@ The VKE use below environment variables to configuration.
 - `APP_ROLE` - application role
 - `APP_CONFIG_PATH` - a path to kv secretm, e.g. `secret/data/app-1/config`
 - `APP_CONFIG_VERSION` - a version of a key to read, if not given then 1 is a default value
+
+In addition to the variables above you can use all variables uses by Vault library. 
+
+```
+APP_ROLE=demo APP_CONFIG_VERSION=2 APP_CONFIG_PATH=kv/data/app-1/config VAULT_ADDR=http://192.168.99.100:30034 our_app
+```
